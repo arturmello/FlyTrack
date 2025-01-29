@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DesafioAndroid</string>
+    <string name="Destination_Date">Ida: 07/08/2025 - Volta: 18/08/2025 | 3 passageiro(s)</string>
+    <string name="Destination_Location">GRU - RIO</string>
+</resources>
