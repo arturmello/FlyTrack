@@ -12,11 +12,11 @@
 
     <View
         android:layout_width="0dp"
-        android:layout_height=".60dp"
+        android:layout_height="0.70dp"
         android:background="@color/color_line"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/flight_route"
@@ -24,7 +24,10 @@
         android:layout_height="wrap_content"
         android:text="@string/Destination_Location"
         android:textSize="16sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="11dp"/>
 
 
     <TextView
@@ -36,7 +39,8 @@
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flight_route"/>
+        app:layout_constraintTop_toBottomOf="@+id/flight_route"
+        android:paddingBottom="11dp"/>
     
     <ImageView
         android:id="@+id/arrow"
@@ -46,17 +50,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/flight_details" />
+        app:layout_constraintStart_toEndOf="@+id/flight_details"
+        android:contentDescription="@string/button_details"/>
 
     <View
         android:layout_width="0dp"
-        android:layout_height=".60dp"
+        android:layout_height="0.70dp"
         android:background="@color/color_line"
         app:layout_constraintTop_toBottomOf="@id/flight_details"
-
-
-
-
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
