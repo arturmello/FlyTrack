@@ -2,4 +2,7 @@
     <string name="app_name">DesafioAndroid</string>
     <string name="Destination_Date">Ida: 07/08/2025 - Volta: 18/08/2025 | 3 passageiro(s)</string>
     <string name="Destination_Location">GRU - RIO</string>
+    <string name="button_details">Button Details</string>
+    <string name="Flights">Voos</string>
+    <string name="Flight_To">Voo para RIO</string>
 </resources>
