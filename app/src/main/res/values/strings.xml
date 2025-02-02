@@ -8,4 +8,13 @@
     <string name="back_button">Back button</string>
     <string name="txt_description_btn_back">Botão de voltar</string>
     <string name="txt_description_arrow">Setas</string>
+    <string name="return_flight_date">Volta: 29/07/2029</string>
+    <string name="departure_flight_date">Ida: 25/07/2029</string>
+    <string name="txt_arrival_location">RIO</string>
+    <string name="txt_departure_location">GRU</string>
+    <string name="txt_passangers">Passageiros | Capacidade: 2</string>
+    <string name="txt_crew">Tripulação</string>
+    <string name="txt_pilot">Manuela - Piloto</string>
+    <string name="txt_commissioner">Luis - Comissário</string>
+    <string name="txt_copilot">Joaquim - Co-Piloto</string>
 </resources>
