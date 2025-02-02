@@ -5,4 +5,7 @@
     <string name="button_details">Button Details</string>
     <string name="Flights">Voos</string>
     <string name="Flight_To">Voo para RIO</string>
+    <string name="back_button">Back button</string>
+    <string name="txt_description_btn_back">Botão de voltar</string>
+    <string name="txt_description_arrow">Setas</string>
 </resources>
