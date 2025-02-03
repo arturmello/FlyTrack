@@ -17,4 +17,17 @@
     <string name="txt_pilot">Manuela - Piloto</string>
     <string name="txt_commissioner">Luis - Comissário</string>
     <string name="txt_copilot">Joaquim - Co-Piloto</string>
+    <string name="txt_btn_back">Voos</string>
+    <string name="arrows_descriptions">Figura de Setas dos voos</string>
+    <string name="add_button_description">Botão de Adicionar Voo</string>
+    <string name="departure_location">Local de Partida</string>
+    <string name="arrival_destiny">Local de Destino</string>
+    <string name="arrival_icon">Ícone de destino</string>
+    <string name="departure_icon">Ícone de Partida</string>
+    <string name="new_flight">Novo voo</string>
+    <string name="calendar_icon">Ícone de Calendário</string>
+    <string name="departure_date">Data de Partida</string>
+    <string name="return_date">Data de Volta</string>
+    <string name="add_passenger_icon">Ícone para adicionar passageiros</string>
+    <string name="capacity_flight">Capacidade do Voo</string>
 </resources>

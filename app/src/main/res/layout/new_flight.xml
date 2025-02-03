@@ -1,6 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/new_flight">
+
+    <TextView
+        android:id="@+id/txt_newFlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_flight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_back_flight"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="translucent"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/baseline_keyboard_arrow_left_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_newFlight"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_btn_back"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/btn_back_flight"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back_flight"
+        app:layout_constraintTop_toTopOf="@+id/btn_back_flight"/>
+
+    <!-- Container LinearLayout para o campo de texto e imagem -->
+    <LinearLayout
+        android:id="@+id/departure_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/txt_newFlight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <!-- Imagem ao lado do EditText -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/departure_icon"
+            android:src="@drawable/departure_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- EditText com fundo para criar a caixa -->
+        <EditText
+            android:id="@+id/departure_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/departure_location"
+            android:inputType="text"
+            android:autofillHints="AUTOFILL_HINT_DEPARTURE_FLIGHT"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/arrival_input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/departure_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <!-- Imagem ao lado do EditText -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/arrival_icon"
+            android:src="@drawable/arrival_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- EditText com fundo para criar a caixa -->
+        <EditText
+            android:id="@+id/arrival_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="AUTOFILL_HINT_ARRIVAL_FLIGHT"
+            android:hint="@string/arrival_destiny"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            tools:ignore="LabelFor" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/date_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/arrival_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/calendar_icon"
+            android:src="@drawable/calendar_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="AUTOFILL_HINT_DEPARTURE_DATE"
+            android:hint="@string/departure_date"
+            android:inputType="none"
+            android:focusable="false"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"/>
+
+
+
+        <EditText
+            android:id="@+id/return_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="AUTOFILL_HINT_ARRIVAL_DATE"
+            android:hint="@string/return_date"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginStart="8dp"
+            tools:ignore="TextFields" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/date_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/add_passenger_icon"
+            android:src="@drawable/add_person_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:autofillHints="AUTOFILL_HINT_ADD_PASSENGER"
+            android:hint="@string/capacity_flight"
+            android:textAlignment="center"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginStart="8dp"/>
+
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
